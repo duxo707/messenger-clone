@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Link from "next/link";
 import clsx from "clsx";
@@ -22,6 +22,7 @@ const MobileItem:React.FC<MobileItemProps> = ({
   }
   return (
     <Link 
+      onClick={handleClick}
       href={href}
       className = {clsx(`
         group
